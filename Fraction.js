@@ -6,7 +6,7 @@ class Fraction
       this.numerator=numerator;
       this.denominator=denominator;
     }
-    add(f)
+    mul(f)
     {
       let den = this.denominator * f.denominator;
       let num = ((this.numerator * f.denominator) * (f.numerator * this.denominator));
@@ -45,7 +45,7 @@ function main()
 {
   let f1 = input_fraction();
   let f2 = input_fraction();
-  let f3 = f1.add(f2)
+  let f3 = f1.mul(f2)
   output_result(f1,f2,f3);
 }
 
